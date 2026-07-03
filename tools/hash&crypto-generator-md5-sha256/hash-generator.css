@@ -1,0 +1,97 @@
+/* start main-app section */
+.main-app {
+  width: 100%;
+  background-color: var(--first-color);
+}
+.main-app .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.main-app .container .hash-input,
+.main-app .container .hash-output {
+  width: 100%;
+}
+.main-app .container .hash-input textarea,
+.main-app .container .hash-output input {
+  width: 100%;
+  resize: none;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  border-radius: 8px;
+  border: 2px solid var(--fifth-color);
+  outline: none;
+  transition: var(--main-transition);
+  font-size: 14px;
+}
+.main-app .container .hash-input textarea {
+  height: 150px;
+  padding: 15px;
+}
+.main-app .container .hash-output input {
+  padding: 15px;
+}
+.main-app .container .hash-input textarea:focus {
+  border-color: var(--third-color);
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+ 
+ /* Button layouts */
+.main-app .container button {
+  padding: 10px 20px;
+  margin: 10px auto;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid var(--first-color);
+  outline: 2px solid var(--first-color);
+  cursor: pointer;
+  border-radius: var(--main-radius);
+  overflow: hidden;
+  transition: var(--main-transition);
+  background-color: var(--third-color);
+  color: white;
+}
+.main-app .container .copy-btn:hover {
+  outline-color: var(--third-color);
+}
+.copy-animation {
+  animation: copy-an 0.5s ease;
+}
+@keyframes copy-an {
+  50% {
+    background-color: white;
+    color: var(--third-color);
+  }
+  100% {
+    background-color: var(--third-color);
+    color: white;
+  }
+}
+
+/* End Button layouts */
+
+/* Responsive design for */
+@media (min-width: 768px) {
+  
+  .main-app .container {
+    flex-direction: row;
+  }
+  .main-app .container .hash-input,
+  .main-app .container .hash-output {
+    flex: 1;
+    max-width: 50%;
+  }
+  .main-app .container .hash-input textarea {
+    height: 250px;
+  }
+  .main-app .container button {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+}
+/* End main-app section */
