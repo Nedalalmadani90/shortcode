@@ -1,0 +1,189 @@
+/* start main-app section */
+.main-app {
+  width: 100%;
+  background-color: var(--first-color);
+}
+.main-app .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.main-app .container .json-input,
+.main-app .container .json-output {
+  width: 100%;
+}
+.main-app .container .json-input textarea,
+.main-app .container .json-output pre {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  padding: 15px;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  border-radius: 8px;
+  border: 2px solid var(--fifth-color);
+  outline: none;
+  transition: var(--main-transition);
+  font-size: 14px;
+}
+.main-app .container .json-input textarea:focus {
+  border-color: var(--third-color);
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+.main-app .container .json-output pre {
+  color: var(--fourth-color);
+  background-color: var(--second-color);
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+.main-app .container .error-box {
+  font-family: 'Fira Code', 'Courier New', monospace;
+  display: none;
+  padding: 15px;
+  width: 100%;
+  height: fit-content;
+  color: red !important;
+  border-radius: var(--main-radius);
+  border: 1px solid red;
+ }
+ 
+ /* Button layouts */
+.main-app .container .btns {
+  position: relative;
+  width: 100%;
+}
+.main-app .container .btns div {
+  width: fit-content;
+  margin: 0 auto;
+}
+.main-app .container .btns button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid var(--first-color);
+  outline: 2px solid var(--first-color);
+  cursor: pointer;
+  border-radius: var(--main-radius);
+  overflow: hidden;
+  transition: var(--main-transition);
+}
+.main-app .container .btns .format-btn {
+  background-color: var(--third-color);
+  color: white;
+}
+.main-app .container .btns .format-btn:hover {
+  outline-color: var(--third-color);
+}
+.format-animation {
+  animation: format-an 0.5s ease;
+}
+@keyframes format-an {
+  50% {
+    background-color: var(--second-color);
+    color: var(--third-color);
+  }
+  100% {
+    background-color: var(--third-color);
+    color: white;
+  }
+}
+.main-app .container .btns .minifier-btn {
+  background-color: white;
+  color: var(--third-color);
+}
+.main-app .container .btns .minifier-btn:hover {
+  outline-color: var(--third-color);
+}
+.minify-animation {
+  animation: minify-an 0.5s ease;
+}
+@keyframes minify-an {
+  50% {
+    background-color: var(--second-color);
+    color: white;
+  }
+  100% {
+    background-color: white;
+    color: var(--third-color);
+  }
+}
+.main-app .container .btns .copy-btn {
+  background-color: var(--fourth-color);
+  color: var(--second-color);
+}
+.main-app .container .btns .copy-btn:hover {
+  outline-color: var(--fourth-color);
+}
+.copy-animation {
+  animation: copy-an 0.5s ease;
+}
+@keyframes copy-an {
+  50% {
+    background-color: var(--second-color);
+    color: var(--fourth-color);
+  }
+  100% {
+    background-color: var(--fourth-color);
+    color: var(--second-color);
+  }
+}
+.main-app .container .btns .clear-btn {
+  background-color: var(--second-color);
+  color: var(--fourth-color);
+}
+.main-app .container .btns .clear-btn:hover {
+  outline-color: var(--fourth-color);
+}
+.clear-animation {
+  animation: clear-an 0.5s ease;
+}
+@keyframes clear-an {
+  50% {
+    background-color: var(--fourth-color);
+    color: var(--second-color);
+  }
+  100% {
+    background-color: var(--second-color);
+    color: var(--fourth-color);
+  }
+}
+/* End Button layouts */
+
+/* Responsive design for */
+@media (min-width: 768px) {
+  
+  .main-app .container {
+    flex-direction: row;
+  }
+  .main-app .container .json-input,
+  .main-app .container .json-output {
+    flex: 1;
+    max-width: 50%;
+  }
+  .main-app .container .json-input textarea,
+  .main-app .container .json-output pre {
+    height: 250px;
+  }
+  .main-app .container .error-box {
+    font-family: 'Fira Code', 'Courier New', monospace;
+    display: none;
+    padding: 15px;
+    color: red !important;
+    border-radius: var(--main-radius);
+    border: 1px solid red;
+  }
+  .main-app .container .btns {
+  }
+  .main-app .container .btns button {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+}
+/* End main-app section */
