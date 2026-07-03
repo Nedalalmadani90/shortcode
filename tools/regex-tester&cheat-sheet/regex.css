@@ -1,0 +1,116 @@
+/* start main-app section */
+.main-app {
+  width: 100%;
+  background-color: var(--first-color);
+}
+.main-app .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.main-app .container .regex-text-input,
+.main-app .container .regex-text-output {
+  width: 100%;
+}
+.main-app .container .regex-text-input textarea,
+.main-app .container .regex-text-input input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid var(--fifth-color);
+  outline: none;
+  transition: var(--main-transition);
+  font-size: 14px;
+}
+.main-app .container .regex-text-input textarea {
+  margin: 10px 0 0;
+  height: 150px;
+  resize: none;
+}
+.main-app .container .regex-text-input textarea:focus,
+.main-app .container .regex-text-input input:focus{
+  border-color: var(--third-color);
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+.main-app .container .regex-error-output {
+  padding: 15px;
+  width: 100%;
+  height: fit-content;
+  background-color: var(--second-color);
+  color: var(--fourth-color);
+  border-radius: var(--main-radius);
+  border: 1px solid var(--third-color);
+ }
+ 
+ .regex-error-output mark {
+    background-color: #f1c40f;
+    color: #000000;
+    border-radius: 3px;
+    padding: 0 2px;
+}
+
+.table-descreption .container {
+  position: relative;
+  background-color: var(--fourth-color);
+  padding: 10px 0 0;
+  border-radius: var(--main-radius);
+}
+.regex-cheat-sheet h3 {
+  padding: 20px;
+  border-radius: var(--second-radius);
+  margin: 0 10px;
+  color: var(--third-color);
+  background-color: var(--first-color);
+}
+.regex-cheat-sheet table {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+}
+.regex-cheat-sheet .cheat-table thead tr th {
+  padding: 10px 20px;
+  background-color: var(--third-color);
+  color: white;
+  text-align: center;
+}
+.regex-cheat-sheet table tbody tr td {
+  padding: 10px;
+  font-size: 14px;
+  color: var(--second-color);
+  border-bottom: 1px solid var(--fifth-color);
+}
+.regex-cheat-sheet table tbody tr:last-child td {
+  border-bottom: none;
+}
+/* Responsive design for */
+@media (min-width: 768px) {
+  
+  .main-app .container {
+    flex-direction: row;
+    padding: 15px 30px;
+  }
+  .main-app .container .regex-text-input,
+  .main-app .container .regex-error-output{
+    flex: 1;
+    max-width: 50%;
+  }
+  .main-app .container .regex-text-input,
+  .main-app .container .regex-error-output{
+    height: 250px;
+  }
+   .main-app .container .regex-text-input textarea {
+    height: 190px;
+   }
+  .main-app .container .regex-error-output {
+    padding: 15px;
+    border-radius: var(--main-radius);
+  }
+}
+/* End main-app section */
