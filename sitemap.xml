@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- 1. الصفحة الرئيسية (JSON Formatter) -->
   <url>
     <loc>https://nedalalmadani90.github.io/shortcode/</loc>
     <lastmod>2026-07-05</lastmod>
@@ -8,20 +9,23 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- 2. أداة Hash Generator (تم تصحيح الـ & هنا) -->
   <url>
-    <loc>https://nedalalmadani90.github.io/shortcode/tools/hash&crypto-generator-md5-sha256/hash-generator.html</loc>
+    <loc>https://nedalalmadani90.github.io/shortcode/tools/hash&amp;crypto-generator-md5-sha256/hash-generator.html</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
+  <!-- 3. أداة Regex Tester (تم تصحيح الـ & هنا) -->
   <url>
-    <loc>https://nedalalmadani90.github.io/shortcode/tools/regex-tester&cheat-sheet/regex.html</loc>
+    <loc>https://nedalalmadani90.github.io/shortcode/tools/regex-tester&amp;cheat-sheet/regex.html</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
+  <!-- 4. أداة Base64 Encoder/Decoder -->
   <url>
     <loc>https://nedalalmadani90.github.io/shortcode/tools/base64-encoder-decoder/base64.html</loc>
     <lastmod>2026-07-05</lastmod>
@@ -29,6 +33,7 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- 5. أداة URL Encoder/Decoder -->
   <url>
     <loc>https://nedalalmadani90.github.io/shortcode/tools/url-encoder-decoder/urlencoder.html</loc>
     <lastmod>2026-07-05</lastmod>
