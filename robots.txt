@@ -1,3 +1,6 @@
 User-agent: *
 Disallow: /privacy.html
 Disallow: /terms.html
+Disallow: /about.html
+
+Sitemap: https://nedalalmadani90.github.io/shortcode/sitemap.xml
