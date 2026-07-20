@@ -104,11 +104,11 @@ body.light {
     }
 }
 .main-title {
-  padding: 0 0 15px;
+  padding: 10px 0 25px;
   width: fit-content;
   margin: 0 auto;
 }
-.main-title h2 {
+.main-title h1 {
   width: 100%;
   color: var(--third-color);
 }
@@ -121,6 +121,7 @@ body.light {
   background-color: var(--fourth-color);
   padding: 10px 0;
   border-radius: var(--main-radius);
+  box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.5);
 }
 .tool-description h2 {
   padding: 20px;
@@ -134,6 +135,16 @@ body.light {
   color: var(--second-color);
   font-size: 14px;
 }
+body.light .tool-description .container {
+  background-color: var(--second-color);
+}
+body.light .tool-description h2 {
+  color: var(--second-color);
+  background-color: var(--fourth-color);
+}
+body.light .tool-description p {
+  color: var(--fourth-color);
+}
 .tool-FAQ {
   width: 100%;
   margin: 20px 0;
@@ -142,11 +153,12 @@ body.light {
   background-color: var(--fourth-color);
   padding: 10px 0;
   border-radius: var(--main-radius);
+  box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.5);
 }
 .tool-FAQ h2 {
   padding: 20px;
   border-radius: var(--second-radius);
-  margin: 0 10px;
+  margin: 0 10px 10px;
   color: var(--third-color);
   background-color: var(--first-color);
 }
@@ -163,6 +175,17 @@ body.light {
   padding: 10px 20px;
   color: var(--second-color);
   font-size: 14px;
+}
+body.light .tool-FAQ .container {
+  background-color: var(--second-color);
+}
+body.light .tool-FAQ h2,
+body.light .tool-FAQ h3 {
+  color: var(--second-color);
+  background-color: var(--fourth-color);
+}
+body.light .tool-FAQ p {
+  color: var(--fourth-color);
 }
 /* Header and Menu */
 .logo {
@@ -366,8 +389,9 @@ footer .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  column-gap: 20px;
   align-items: flex-start;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 footer p {
   text-align: center;
@@ -387,6 +411,9 @@ footer .footer-links a {
   width: 100%;
   margin-bottom: 20px;
 }
+footer .copyright-text {
+  margin-bottom: 20px;
+}
 @media (min-width: 768px) {
   .header .list {
     width: 50%;
@@ -397,8 +424,11 @@ footer .footer-links a {
     left: 0;
   }
   footer .container {
-    margin-bottom: 110px;
+    margin-bottom: 30px;
   }
+  footer .copyright-text {
+  margin-bottom: 40px;
+}
 }
 /* end header and menu */
 
