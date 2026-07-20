@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Free online Regex tester and decoder. Test, debug, and decode complex regular expressions instantly with our easy-to-use cheat sheet">
     <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2GJYGDDVXY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-2GJYGDDVXY');
-</script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Regex Tester & Debugger",
+      "url": "https://nedalalmadani90.github.io/shortcode/tools/regex-tester&cheat-sheet/regex.html",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2GJYGDDVXY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-2GJYGDDVXY');
+    </script>
     <meta property="og:title" content="Regex Tester & Debugger - Short Code - Fast Web Utilities">
     <meta property="og:description" content="Ultra-fast, lightweight client-side tools for developers. أدوات ويب سريعة وخفيفة للمطورين.">
     <meta property="og:type" content="website">
@@ -23,183 +40,183 @@
     <link rel="canonical" href="https://nedalalmadani90.github.io/shortcode/tools/regex-tester&cheat-sheet/regex.html" />
     <link rel="stylesheet" href="../../assets/css/global.css">
     <link rel="stylesheet" href="regex.css">
-</head>
-<body>
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <div class="logo">
-        <a href="../../index.html">
-          <svg viewbox="0 0 1800 600" xmlns="http://www.w3.org/2000/svg">
-          <!-- The outer square -->
-          <path class="square" d="M 300 0 L 600 300 L 300 600 L 0 300 Z" />
-          <!-- The upper corner -->
-          <path class="left" d="M 300 30 L 400 130 L 400 190 L 300 90 L 200 190 L 200 130 Z" />
-          <!-- The bottom corner -->
-          <path class="right" d="M 300 570 L 400 470 L 400 410 L 300 510 L 200 410 L 200 470 Z" />
-          <!-- left corner -->
-          <path class="left" d="M 20 300 L 150 170 L 180 170 L 50 300 L 180 430 L 150 430 Z" />
-          <!-- right corner -->
-          <path class="right" d="M 580 300 L 450 170 L 420 170 L 550 300 L 420 430 L 450 430 Z" />
-          <!-- The line in the middle -->
-          <path class="right" d="M 285 175 L 315 175 L 315 425 L 285 425 Z" />
-          <!-- S char -->
-          <text class="left" x="195" y="375" font-weight="900" text-anchor="middle" font-size="190">S</text>
-          <!-- C char -->
-          <text class="right" x="410" y="375" font-weight="900" text-anchor="middle" font-size="190">C</text>
-          <!-- title -->
-          <text class="right" x="890" y="375" font-weight="900" text-anchor="middle" font-size="190">Short</text>
-          <text class="square" x="1450" y="375" font-weight="900" text-anchor="middle" font-size="190">Code</text>
-        </svg>
-        </a>
-      </div>
-      <div class="menu-btn" id="menu-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/></svg>
-      </div>
-      <ul class="list" id="list">
-        <li>
-          <div class="mode">
-            <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2V4M12 20V22M4 12H2M6.31412 6.31412L4.8999 4.8999M17.6859 6.31412L19.1001 4.8999M6.31412 17.69L4.8999 19.1042M17.6859 17.69L19.1001 19.1042M22 12H20M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <button class="mode-btn" id="mode-btn"></button>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
-          </div>
-          <div class="lang">
-            <div class="lang-btn" id="lang-btn">🇬🇧</div>
-            <ul class="lang-list" id="lang-list">
-              <li data-opt="en">🇬🇧</li>
-              <li data-opt="ar">🇸🇦</li>
-            </ul>
-          </div>
-        </li>
-        <li><a href="../hash&crypto-generator-md5-sha256/hash-generator.html" data-i18n="hash_link">Hash Generator SHA256-MD5</a></li>
-        <li><a href="../url-encoder-decoder/urlencoder.html" data-i18n="url_link">URL Encoder Decoder</a></li>
-        <li><a href="../base64-encoder-decoder/base64.html" data-i18n="base64_link">Base64 Encoder Decoder</a></li>
-        <li><a href="regex.html" data-i18n="regex_link">Regular Expression Tester</a></li>
-        <li><a href="../case-converter/case-converter.html">Case Converter</a></li>
-        <li><a href="../../index.html" data-i18n="json_link">JSON Formatter</a></li>
-      </ul>
-    </div>
-  </header>
-  <!-- End Header -->
-  
-  <!-- Ads -->
-  <div class="ad-container header-ad" id="ad-container">
-  </div>
-  
-  <!-- Tool description -->
-    <section class="tool-description">
-    <div class="main-title">
-      <h2 data-i18n="regex_tester_title">Regular Expression Tester</h2>
-    </div>
-    <div class="container">
-      <h2 data-i18n="regex_desc_title">What is Regex Tester?</h2>
-      <p data-i18n="regex_desc_body">Regex Tester is an interactive, real-time utility that allows developers to write, test, and debug Regular Expressions (Regex). Input your pattern and a test string to see matching results instantly.</p>
-    </div>
-  </section>
-
-  <!-- Main App -->
-  <section class="main-app">
-    <div class="container">
-      <div class="regex-text-input" id="regex-text-input">
-        <input type="text" id="regex-input" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="Enter the expression you want to search for within the text" data-i18n="regex_input_placeholder">
-        <textarea id="text-input" placeholder="Enter the text you want to search within" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" data-i18n="text_input_placeholder"></textarea>
-      </div>
-      <div class="regex-error-output" id="regex-error-output" data-i18n="regex_or_error_output_placeholder">Here are the search results </div>
-    </div>
-  </section>
-  <section class="table-descreption">
-    <div class="container">
-      <div class="regex-cheat-sheet" id="regex-cheat-sheet">
-      <h3 data-i18n="regex_table_title">Regex Quick Reference</h3>
-      <table class="cheat-table">
-        <thead>
-          <tr>
-            <th data-i18n="regex_th_1">Pattern</th>
-            <th data-i18n="regex_th_2">Description</th>
-            <th data-i18n="regex_th_3">Example</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><code>\d</code></td>
-            <td data-i18n="regex_td_1">Any number from 0 to 9</td>
-            <td data-i18n="regex_td_2">Extract "3" from "Nedhal 23"</td>
-          </tr>
-          <tr>
-            <td><code>\w</code></td>
-            <td data-i18n="regex_td_3">Any English letter, number, or underscore "_"</td>
-            <td data-i18n="regex_td_4">Fully matching words and texts</td>
-          </tr>
-          <tr>
-            <td><code>\s</code></td>
-            <td data-i18n="regex_td_5">any empty space (Space)</td>
-            <td data-i18n="regex_td_6">Useful to search for spaces between words</td>
-          </tr>
-          <tr>
-            <td><code>+</code></td>
-            <td data-i18n="regex_td_7">Repeat the previous code once or more</td>
-            <td data-i18n="regex_td_8">"\d+" Brings all consecutive numbers</td>
-          </tr>
-          <tr>
-            <td><code>[a-z]</code></td>
-            <td data-i18n="regex_td_9">Any English letter from a to z</td>
-            <td data-i18n="regex_td_10">Only small letters match</td>
-          </tr>
-          <tr>
-            <td><code>[A-Z]</code></td>
-            <td data-i18n="regex_td_11">Which is a large letter from A to Z</td>
-            <td data-i18n="regex_td_12">only match uppercase</td>
-          </tr>
-          <tr>
-            <td><code>.</code></td>
-            <td data-i18n="regex_td_13">Any character, symbol, or number, except for the new line</td>
-            <td data-i18n="regex_td_14">Useful to find anything</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    </div>
-  </section>
-  <section class="tool-FAQ">
-    <div class="container">
-      <h2 data-i18n="FAQ_title">Frequently Asked Questions (FAQ)</h2>
-      <div class="question">
-        <h3 data-i18n="regex_question_1">Q1: Which Regex flavor does this tool use?</h3>
-        <p data-i18n="regex_answer_1">It utilizes the native JavaScript RegExp engine, which runs lightning-fast and complies fully with modern ECMAScript standards for frontend and backend development.</p>
-      </div>
-      <div class="question">
-        <h3 data-i18n="regex_question_2">Q2: Can I test complex capture groups here?</h3>
-        <p data-i18n="regex_answer_2">Yes, the tool handles advanced patterns, global flags, and capture groups locally, highlighting exact matches as you type without reloading the page.</p>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <div class="container">
-        <p class="copyright-text"><strong data-i18n="copyright_text">© 2026 Short Code. All rights reserved. Developed by Nedal Almadani</strong></p>
-        <div class="footer-links">
-            <a href="../../privacy.html" data-i18n="privacy_link">Privacy Policy</a>
-            <a href="../../terms.html" data-i18n="terms_link">Terms of Service</a>
-            <a href="../../about.html" data-i18n="about_link">About & Contact</a>
-            <div class="contact-info">
-            <p><strong data-i18n="telegram_contact_link">Telegram Channel: </strong><a href="https://t.me/ShortCode12" target="_blank" rel="noopener noreferrer">@shortcode12</a></p>
-          </div>  
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="../../index.html">
+            <svg viewbox="0 0 1800 600" xmlns="http://www.w3.org/2000/svg">
+            <!-- The outer square -->
+            <path class="square" d="M 300 0 L 600 300 L 300 600 L 0 300 Z" />
+            <!-- The upper corner -->
+            <path class="left" d="M 300 30 L 400 130 L 400 190 L 300 90 L 200 190 L 200 130 Z" />
+            <!-- The bottom corner -->
+            <path class="right" d="M 300 570 L 400 470 L 400 410 L 300 510 L 200 410 L 200 470 Z" />
+            <!-- left corner -->
+            <path class="left" d="M 20 300 L 150 170 L 180 170 L 50 300 L 180 430 L 150 430 Z" />
+            <!-- right corner -->
+            <path class="right" d="M 580 300 L 450 170 L 420 170 L 550 300 L 420 430 L 450 430 Z" />
+            <!-- The line in the middle -->
+            <path class="right" d="M 285 175 L 315 175 L 315 425 L 285 425 Z" />
+            <!-- S char -->
+            <text class="left" x="195" y="375" font-weight="900" text-anchor="middle" font-size="190">S</text>
+            <!-- C char -->
+            <text class="right" x="410" y="375" font-weight="900" text-anchor="middle" font-size="190">C</text>
+            <!-- title -->
+            <text class="right" x="890" y="375" font-weight="900" text-anchor="middle" font-size="190">Short</text>
+            <text class="square" x="1450" y="375" font-weight="900" text-anchor="middle" font-size="190">Code</text>
+          </svg>
+          </a>
         </div>
-        <div class="footer-links">
-          <a href="../hash&crypto-generator-md5-sha256/hash-generator.html" data-i18n="hash_link">Hash Generator SHA256-MD5</a>
-          <a href="../url-encoder-decoder/urlencoder.html" data-i18n="url_link">URL Encoder Decoder</a>
-          <a href="../base64-encoder-decoder/base64.html" data-i18n="base64_link">Base64 Encoder Decoder</a>
-          <a href="regex.html" data-i18n="regex_link">Regular Expression Tester</a>
-          <a href="../case-converter/case-converter.html">Case Converter</a>
-          <a href="../../index.html" data-i18n="json_link">JSON Formatter</a>
+        <div class="menu-btn" id="menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/></svg>
         </div>
+        <ul class="list" id="list">
+          <li>
+            <div class="mode">
+              <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2V4M12 20V22M4 12H2M6.31412 6.31412L4.8999 4.8999M17.6859 6.31412L19.1001 4.8999M6.31412 17.69L4.8999 19.1042M17.6859 17.69L19.1001 19.1042M22 12H20M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <button class="mode-btn" id="mode-btn"></button>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            </div>
+            <div class="lang">
+              <div class="lang-btn" id="lang-btn">🇬🇧</div>
+              <ul class="lang-list" id="lang-list">
+                <li data-opt="en">🇬🇧</li>
+                <li data-opt="ar">🇸🇦</li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="../hash&crypto-generator-md5-sha256/hash-generator.html" data-i18n="hash_link">Hash Generator SHA256-MD5</a></li>
+          <li><a href="../url-encoder-decoder/urlencoder.html" data-i18n="url_link">URL Encoder Decoder</a></li>
+          <li><a href="../base64-encoder-decoder/base64.html" data-i18n="base64_link">Base64 Encoder Decoder</a></li>
+          <li><a href="regex.html" data-i18n="regex_link">Regular Expression Tester</a></li>
+          <li><a href="../case-converter/case-converter.html">Case Converter</a></li>
+          <li><a href="../../index.html" data-i18n="json_link">JSON Formatter</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- End Header -->
+    
+    <!-- Ads -->
+    <div class="ad-container header-ad" id="ad-container">
     </div>
-</footer>
-
-  </div>
-  <script src="../../assets/js/global.min.js"></script>
-  <script src="regex.min.js"></script>
-  <!-- Ads -->
-  <script src="https://pl30211109.effectivecpmnetwork.com/a8/28/6e/a8286e86aa2a7f2c4064af3e31b2a65b.js"></script>
-</body>
+    
+    <!-- Tool description -->
+      <section class="tool-description">
+      <div class="main-title">
+        <h2 data-i18n="regex_tester_title">Regular Expression Tester</h2>
+      </div>
+      <div class="container">
+        <h2 data-i18n="regex_desc_title">What is Regex Tester?</h2>
+        <p data-i18n="regex_desc_body">Regex Tester is an interactive, real-time utility that allows developers to write, test, and debug Regular Expressions (Regex). Input your pattern and a test string to see matching results instantly.</p>
+      </div>
+    </section>
+  
+    <!-- Main App -->
+    <section class="main-app">
+      <div class="container">
+        <div class="regex-text-input" id="regex-text-input">
+          <input type="text" id="regex-input" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="Enter the expression you want to search for within the text" data-i18n="regex_input_placeholder">
+          <textarea id="text-input" placeholder="Enter the text you want to search within" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" data-i18n="text_input_placeholder"></textarea>
+        </div>
+        <div class="regex-error-output" id="regex-error-output" data-i18n="regex_or_error_output_placeholder">Here are the search results </div>
+      </div>
+    </section>
+    <section class="table-descreption">
+      <div class="container">
+        <div class="regex-cheat-sheet" id="regex-cheat-sheet">
+        <h3 data-i18n="regex_table_title">Regex Quick Reference</h3>
+        <table class="cheat-table">
+          <thead>
+            <tr>
+              <th data-i18n="regex_th_1">Pattern</th>
+              <th data-i18n="regex_th_2">Description</th>
+              <th data-i18n="regex_th_3">Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>\d</code></td>
+              <td data-i18n="regex_td_1">Any number from 0 to 9</td>
+              <td data-i18n="regex_td_2">Extract "3" from "Nedhal 23"</td>
+            </tr>
+            <tr>
+              <td><code>\w</code></td>
+              <td data-i18n="regex_td_3">Any English letter, number, or underscore "_"</td>
+              <td data-i18n="regex_td_4">Fully matching words and texts</td>
+            </tr>
+            <tr>
+              <td><code>\s</code></td>
+              <td data-i18n="regex_td_5">any empty space (Space)</td>
+              <td data-i18n="regex_td_6">Useful to search for spaces between words</td>
+            </tr>
+            <tr>
+              <td><code>+</code></td>
+              <td data-i18n="regex_td_7">Repeat the previous code once or more</td>
+              <td data-i18n="regex_td_8">"\d+" Brings all consecutive numbers</td>
+            </tr>
+            <tr>
+              <td><code>[a-z]</code></td>
+              <td data-i18n="regex_td_9">Any English letter from a to z</td>
+              <td data-i18n="regex_td_10">Only small letters match</td>
+            </tr>
+            <tr>
+              <td><code>[A-Z]</code></td>
+              <td data-i18n="regex_td_11">Which is a large letter from A to Z</td>
+              <td data-i18n="regex_td_12">only match uppercase</td>
+            </tr>
+            <tr>
+              <td><code>.</code></td>
+              <td data-i18n="regex_td_13">Any character, symbol, or number, except for the new line</td>
+              <td data-i18n="regex_td_14">Useful to find anything</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  
+      </div>
+    </section>
+    <section class="tool-FAQ">
+      <div class="container">
+        <h2 data-i18n="FAQ_title">Frequently Asked Questions (FAQ)</h2>
+        <div class="question">
+          <h3 data-i18n="regex_question_1">Q1: Which Regex flavor does this tool use?</h3>
+          <p data-i18n="regex_answer_1">It utilizes the native JavaScript RegExp engine, which runs lightning-fast and complies fully with modern ECMAScript standards for frontend and backend development.</p>
+        </div>
+        <div class="question">
+          <h3 data-i18n="regex_question_2">Q2: Can I test complex capture groups here?</h3>
+          <p data-i18n="regex_answer_2">Yes, the tool handles advanced patterns, global flags, and capture groups locally, highlighting exact matches as you type without reloading the page.</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+          <p class="copyright-text"><strong data-i18n="copyright_text">© 2026 Short Code. All rights reserved. Developed by Nedal Almadani</strong></p>
+          <div class="footer-links">
+              <a href="../../privacy.html" data-i18n="privacy_link">Privacy Policy</a>
+              <a href="../../terms.html" data-i18n="terms_link">Terms of Service</a>
+              <a href="../../about.html" data-i18n="about_link">About & Contact</a>
+              <div class="contact-info">
+              <p><strong data-i18n="telegram_contact_link">Telegram Channel: </strong><a href="https://t.me/ShortCode12" target="_blank" rel="noopener noreferrer">@shortcode12</a></p>
+            </div>  
+          </div>
+          <div class="footer-links">
+            <a href="../hash&crypto-generator-md5-sha256/hash-generator.html" data-i18n="hash_link">Hash Generator SHA256-MD5</a>
+            <a href="../url-encoder-decoder/urlencoder.html" data-i18n="url_link">URL Encoder Decoder</a>
+            <a href="../base64-encoder-decoder/base64.html" data-i18n="base64_link">Base64 Encoder Decoder</a>
+            <a href="regex.html" data-i18n="regex_link">Regular Expression Tester</a>
+            <a href="../case-converter/case-converter.html">Case Converter</a>
+            <a href="../../index.html" data-i18n="json_link">JSON Formatter</a>
+          </div>
+      </div>
+  </footer>
+  
+    </div>
+    <script src="../../assets/js/global.min.js"></script>
+    <script src="regex.min.js"></script>
+    <!-- Ads -->
+    <script src="https://pl30211109.effectivecpmnetwork.com/a8/28/6e/a8286e86aa2a7f2c4064af3e31b2a65b.js"></script>
+  </body>
 </html>
