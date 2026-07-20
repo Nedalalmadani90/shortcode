@@ -1,0 +1,119 @@
+.main-app {
+  width: 100%;
+}
+.main-app .text-input {
+  position: relative;
+  height: 200px;
+}
+.main-app .text-input textarea {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid var(--fifth-color);
+  outline: none;
+  transition: var(--main-transition);
+  font-size: 14px;
+}
+.main-app .text-input textarea:focus {
+  border-color: var(--third-color);
+}
+.main-app .error-box {
+  display: none;
+  position: relative;
+  padding: 15px;
+  border: 2px solid red;
+  background-color: rgba(255,87,87,0.588);
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  margin: 15px 10px 0;
+}
+.main-app .text-input .counters {
+  position: absolute;
+  padding: 10px;
+  background-color: var(--second-color);
+  border-radius: var(--second-radius);
+  bottom: 5px;
+  right: 5px;
+}
+.main-app .text-input .counters div {
+  color: white;
+}
+.main-app .text-input .counter span {
+  font-weight: bold;
+}
+.main-app .btns {
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.main-app .btns button {
+  padding: 15px 10px;
+  margin: 10px 5px 0;
+  width: 150px;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid var(--first-color);
+  outline: 2px solid var(--first-color);
+  cursor: pointer;
+  border-radius: var(--main-radius);
+  overflow: hidden;
+  transition: var(--main-transition);
+  background-color: var(--third-color);
+  color: white;
+}
+.main-app .btns .copy-btn {
+  background-color: var(--fourth-color);
+  color: var(--second-color);
+}
+.main-app .btns .copy-btn:hover {
+  outline-color: var(--fourth-color);
+}
+.copy-animation {
+  animation: copy-an 0.5s ease;
+}
+@keyframes copy-an {
+  50% {
+    background-color: var(--second-color);
+    color: var(--fourth-color);
+  }
+  100% {
+    background-color: var(--fourth-color);
+    color: var(--second-color);
+  }
+}
+.main-app .btns .clear-btn {
+  background-color: var(--second-color);
+  color: var(--fourth-color);
+}
+.main-app .btns .clear-btn:hover {
+  outline-color: var(--fourth-color);
+}
+.clear-animation {
+  animation: clear-an 0.5s ease;
+}
+@keyframes clear-an {
+  50% {
+    background-color: var(--fourth-color);
+    color: var(--second-color);
+  }
+  100% {
+    background-color: var(--second-color);
+    color: var(--fourth-color);
+  }
+}
+@media (min-width: 768px) {
+  .main-app .error-box {
+    width: 75%;
+    margin: 15px auto;
+  }
+  .main-app .btns {
+    width: 75%;
+    margin: 15px auto;
+  }
+}
