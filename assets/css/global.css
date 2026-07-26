@@ -24,8 +24,8 @@ button {
   --fourth-color: #eeeeee;
   --fifth-color: #64748b;
   --main-transition: 0.3s;
-  --main-radius: 10px;
-  --second-radius: 6px;
+  --main-radius: 15px;
+  --second-radius: 10px;
   box-sizing: border-box;
   font-family: Arial;
 }
@@ -115,8 +115,8 @@ body.light {
 }
 
 .tool-description {
-  width: 100%;
-  margin: 0 0 20px;
+  width: calc(100% - 20px);
+  margin: 0 10px 20px;
 }
 .tool-description .container {
   background-color: var(--fourth-color);
@@ -147,8 +147,8 @@ body.light .tool-description p {
   color: var(--fourth-color);
 }
 .tool-FAQ {
-  width: 100%;
-  margin: 20px 0;
+  width: calc(100% - 20px);
+  margin: 20px 10px;
 }
 .tool-FAQ .container {
   background-color: var(--fourth-color);
@@ -190,7 +190,7 @@ body.light .tool-FAQ p {
 }
 /* Header and Menu */
 .logo {
-  height: 60px;
+  height: 45px;
 }
 .logo-about {
   margin: 20px auto;
